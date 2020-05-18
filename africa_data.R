@@ -2,7 +2,7 @@ library(DT)
 library(readr)
 library(htmlwidgets)
 
-# options(browser = "/usr/bin/firefox")
+## options(browser = "/usr/bin/firefox")
 
 data <- read_csv("../african_latest_data.csv")
 
