@@ -8,6 +8,8 @@ data <- read_csv("../african_latest_data.csv")
 
 data$countryterritoryCode <- tolower(data$countryterritoryCode)
 
+data <- data[data$countryterritoryCode != "fra", ]
+
 data <- data[, !(names(data) %in% c("day", "month", "year", "continentExp"))]
 
 data <- data[, c(1, 4, 5, 6, 2, 3, 8, 9, 7)]
